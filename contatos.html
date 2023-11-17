@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PetShop</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik%3Awght%40300%3B400%3B500%3B600%3B700&display=swap">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <span>
+                    PET 
+                    <i class="fa fa-paw"></i>
+                    SHOP
+                </span>
+
+            </div>
+            <ul class="options">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="petshop.html">Pet
+                    <i class="fa fa-paw"></i>  
+                                                Shop</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+
+            </ul>
+            <div class="user">
+                <span><a href="login.html">Logar</a></span>
+                <p> | </p>
+                <span><a href="cadastro.html">Cadastrar</a></span>
+
+            </div>
+            <div class="hamburguer" onclick="menuMobile()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <div class="container">
+            <i class="paw fa fa-paw"></i>    
+            <div class="form">
+                <div class="top">
+                    <span>PET</span>
+                    
+                    <span>SHOP</span>
+                </div>
+                <div class="bottom">
+                    <form>
+                        <input type="text" placeholder="Digite seu nome">
+                        <input type="text" placeholder="Digite seu telefone">                       
+                        <input type="email" placeholder="Digite seu email">
+                        
+                            <div class="caixa">
+                              <label for="assunto">Assunto</label>
+                              <select name="assunto">
+                                  <option value="">Sugestões</option>
+                                  <option value="">Criticas</option>
+                                  <option value="">Reclamações</option>
+                                  <option value="">Duvidas</option>
+                                  <option value="">Outros</option>
+                
+                              </select>
+                              <p><label for="texto">Fale Conosco</label></p>
+                              <p><textarea name="texto" rows="6" cols="30"></textarea>
+                            </div>
+                         
+                        <div class="singUp">                            
+                            <button>
+                                Enviar
+                                <i class="fa fa-paw"></i>
+                            </button>
+                        </div>                            
+                    </form>
+                </div>
+            </div>
+            <i class="paw fa fa-paw"></i>      
+        </div>
+        
+            <script>
+                let options = document.querySelector(".options");
+                function menuMobile(){
+                    options.classList.toggle("active");
+                }
+            </script>        
+    </body>
+</html>

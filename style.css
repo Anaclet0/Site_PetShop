@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*cabeçalho*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1f2a32;
+    display: flex;
+    align-items: center;
+    color: white;
+    z-index: 99999;
+}
+
+
+.logo{
+    font-size: 28px;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.logo span i{
+    color: #FF8A8A;
+}
+/*as opçoes*/
+.options{
+    flex: 2;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+
+}
+.options li a{
+    text-decoration:none;
+    cursor: pointer;
+    color: white;
+}
+
+.options i{
+    color: #FF8A8A;
+
+}
+
+/*logar e cadastra*/
+.user{
+    flex: 1;
+    display: flex;
+    gap: 4px;
+    margin-right: 40px;
+    justify-content: flex-end;
+
+}
+.user span a{
+    text-decoration:none;
+    cursor: pointer;
+    color: white;
+}
+.user p{
+    color: #FF8A8A;
+}
+/*gaveta*/
+.hamburguer{
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    width: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+
+}
+
+.hamburguer .line{
+    height: 1px;
+    width: 100%;
+    background-color: white;
+
+}
+
+/*contatos*/
+.formulario{
+
+}
+
+.container{
+    background: linear-gradient(180deg, #FEF7C9 0%, #FEF7C9 50%, #653731 51%, #653731 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*janela do cadastro/login*/
+.wrapper{
+    position: relative;
+    width: 40%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*janela do formulario*/
+.form{
+    position: relative;
+    width: 40%;
+    height: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 15px;
+    z-index: 2;
+
+}
+
+.caixa assunto {
+    
+    
+       
+}
+
+.top span{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.top span:first-child{
+    color: #1f2a32;
+}
+
+.top span:last-child{
+    color: #FF8A8A;
+
+}
+
+.bottom{
+    position: relative;
+    background-color: #FADBCC;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.bottom .triangle{
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #75372D;
+    position: relative;
+    left: 60px;
+
+}
+.bottom form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 80%;
+    padding: 0px 20px;
+    margin-top: 60px;
+}
+
+.bottom form .profilePic{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #653731;
+    color: white;
+    align-self: center;
+    margin-right: 40px;
+    border: 4px solid #A36A4F;
+}
+/*dentro da bola*/
+.profilePic i{
+    font-size: 50px;
+
+}
+.profilePic .circle{
+    background-color: #A36A4F;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.profilePic .circle i{
+    font-size: 18px;
+
+}
+.bottom form input{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    border-radius: 20px;
+    width: 95%;
+}
+.bottom form .password{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.singUp{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.singUp button{
+    background-color: #A36A4F;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.singUp button i{
+    color: #653731;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.singUp span{
+    cursor: pointer;
+}
+.singUp span a{
+    text-decoration: none;
+    color: #653731;
+
+
+}
+
+.container .paw{
+    font-size: 80px;
+    position: relative;
+}
+
+.container .paw:first-child{
+    bottom: 100px;
+    right: 200px;
+    color: #653731;
+    transform: rotate(-20deg);
+}
+
+.container .paw:last-child{
+    top: 100px;
+    left: 200px;
+    color: #FEF7C9;
+    transform: rotate(20deg);
+}
+
+
+@media (max-width: 1200px){
+    .wrapper{
+        width: 70%;
+    }
+
+    .container .paw{
+        display: none;
+    }
+
+}
+
+@media (max-width: 998px){
+    .wrapper{
+        width: 80%;
+    }
+
+    nav .user{
+        display: none;
+    }
+
+    nav .options{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 60vw;
+        height: 92vh;
+        background-color: #1f2a32;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform .4s ease;
+
+    }
+    nav .options.active{
+        transform: translateX(0%);
+
+    }
+    nav .options.active li{
+        opacity: 0;
+        animation: items 0.5s;
+        animation-fill-mode: forwards;
+    }
+    nav .options.active li:nth-child(1){
+        animation-delay: 0.3s;
+
+
+
+
+    }
+    nav .options.active li:nth-child(2){
+        animation-delay: 0.5s;
+
+
+
+    }
+    nav .options.active li:nth-child(3){
+        animation-delay: 0.7s;
+
+
+
+    }
+    nav .options.active li:nth-child(4){
+        animation-delay: 0.9s;
+
+
+
+    }
+
+    nav .hamburguer{
+        display: flex;
+    }
+
+    
+    
+}
+
+@media (max-width: 669px){
+    .wrapper{
+        width: 100%;
+    }
+    .bottom{
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 441px){
+    .top span{
+        display: none;
+    }
+    .singUp{
+        flex-direction: column-reverse;
+        gap: 3px;
+        align-items: center;
+
+    }
+    .singUp sapn{
+        align-self: flex-start;
+
+    }
+    .singUp botton{
+        align-self: flex-end;
+        
+    }
+    
+}
+@keyframes items {
+    0%{
+        transform: translateX(300%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+
+    }
+    
+}
+
+
+

@@ -93,11 +93,6 @@ footer{
 
 }
 
-/*contatos*/
-.formulario{
-
-}
-
 .container{
     background: linear-gradient(180deg, #FEF7C9 0%, #FEF7C9 50%, #653731 51%, #653731 100%);
     width: 100%;
@@ -107,11 +102,30 @@ footer{
     justify-content: center;
 
 }
+.home {
+    display: flex;
+}
+.home h1{
+    
+    text-align: center;
+    
+}
+
+.home img{
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+
 /*cor back produto*/
 .container1{
-    background-color: #653731;
+    background: linear-gradient(180deg, #FEF7C9 0%, #FEF7C9 50%, #653731 51%, #653731 100%);
     width: 100%;
-    height: 100%;
+    height: 90%;
     align-items: center;
     justify-content: center;
     
@@ -119,28 +133,32 @@ footer{
 }
 
 .bloco{
-
     align-items: center;
     justify-content: center;
     text-align: center;
     display: flex;
 
-
+}
+.caixa-brancaHome{  
+    background-color: #FADBCC;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 22px 2px black;
+    width: 205px;
+    height: 155px;
+    margin: 30px;
 
 }
-.caixa-branca{
-    
-    background-color: white;
+.caixa-branca{  
+    background-color: #FADBCC;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 6px 6px 22px 2px black;
     width: 300px;
     height: 305px;
     margin: 80px;
-  
 
 }
-
 
 .items{
     display: grid;
@@ -163,7 +181,6 @@ footer{
     width: 80%;
     border-radius: 5px;
 
-
 }
 .produtos img{
     width: 200px;
@@ -172,21 +189,20 @@ footer{
     padding: 35px;
 }
 
-
 .item img{
     margin-top: 10px;
     height: 90%;
 
 }
 
-
 .caixa-branca button{
-    background-color: #FADBCC;
+    background-color: #A36A4F;
     width: 50%;
     height: 8%;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 
@@ -210,6 +226,7 @@ footer{
     align-items: center;
     flex-direction: column;
 }
+/*Validação*/
 
 .top{
     display: flex;

@@ -1,0 +1,31 @@
+//Chama o Script no html
+<script src="script.js" type="text/JavaScript"></script>//
+
+//Função validar
+
+function validar(){
+
+    var nome = document.getElementById("nome");
+    var idade = document.getElementById("idade");
+    var email = document.getElementById("email");
+
+    if(nome.value==""){
+        alert("Campo Vazio! - Preencha o Nome!");
+        nome.focus();
+        
+    }
+
+    if(email.value==""){
+        alert("Email Inválido! - Preencha Corretamente!");
+        email.focus();
+        
+    }
+
+    if(idade.value==""){
+        alert("Preencha a Idade Corretamente!");
+        idade.focus();
+        
+    }
+    
+    return;
+}//

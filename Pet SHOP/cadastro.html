@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PetShop</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik%3Awght%40300%3B400%3B500%3B600%3B700&display=swap">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
@@ -50,18 +51,18 @@
                 </div>
                 <div class="bottom">
                     <div class="triangle"></div>
-                    <form>
+                    <form id="formCadastro">
                         <div class="profilePic">
                             <i class="fa fa-user"></i>
                             <div class="circle">
                                 <i class="fa fa-camera-retro"></i>
                             </div>
                         </div>
-                        <input type="text" placeholder="Digite seu nome">
-                        <input type="email" placeholder="Digite seu email">
+                        <input type="text" placeholder="Digite seu nome" id="inputNome"  maxlength="25">
+                        <input type="email" placeholder="Digite seu email" id="inputEmail"  maxlength="50">
                         <div class="password">
-                            <input type="password" placeholder="Senha">
-                            <input type="password" placeholder="Confirmar senha">
+                            <input type="password" placeholder="Senha" id="inputSenha">
+                            <input type="password" placeholder="Confirmar senha" id="inputSenhaConfirm" >
                         </div>
                         <div class="singUp">
                             <span><a href="login.html">Já possui uma conta?</a></span>

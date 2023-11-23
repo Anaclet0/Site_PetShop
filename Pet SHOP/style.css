@@ -28,6 +28,13 @@ footer{
     color: white;
 
 }
+html, boby{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.logo{
+}
 
 
 .logo{
@@ -110,6 +117,50 @@ footer{
     justify-content: center;
 
 }
+.container2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.text-about{
+    font-size: 20px;
+    color: white;
+    margin-left: 100px;
+    margin-right: 700px;
+    
+    
+
+}
+.text-about h3{
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-about p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+.text-about p i{
+    color: #FF8A8A;
+}
+
+.img-about{
+    position: absolute;
+    right: 70px;
+    bottom: -150px;
+    margin-right: 30px;
+}
+.img-about img{
+    width: 31rem;
+}
+
 section{
     position: relative;
     width: 100%;
@@ -298,12 +349,6 @@ section{
     top: 15px;
     z-index: 2;
 
-}
-
-.caixa assunto {
-    
-    
-       
 }
 
 .top span{

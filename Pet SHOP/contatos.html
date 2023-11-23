@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PetShop</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik%3Awght%40300%3B400%3B500%3B600%3B700&display=swap">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
@@ -49,10 +50,10 @@
                     <span>SHOP</span>
                 </div>
                 <div class="bottom">
-                    <form>
-                        <input type="text" placeholder="Digite seu nome">
-                        <input type="text" placeholder="Digite seu telefone">                       
-                        <input type="email" placeholder="Digite seu email">
+                    <form id="formContato">
+                        <input type="text" placeholder="Digite seu nome" id="inputNome"  maxlength="25">
+                        <input type="text" placeholder="Digite seu telefone" id="inputTelefone"  maxlength="11">                       
+                        <input type="email" placeholder="Digite seu email" id="inputEmail" >
                         
                             <div class="caixa">
                               <label for="assunto">Assunto</label>
@@ -65,7 +66,7 @@
                 
                               </select>
                               <p><label for="texto">Fale Conosco</label></p>
-                              <p><textarea name="texto" rows="6" cols="30"></textarea>
+                              <p><textarea name="texto" id="inputTexto"  maxlength="300" rows="6" cols="30"></textarea>
                             </div>
                          
                         <div class="singUp">                            

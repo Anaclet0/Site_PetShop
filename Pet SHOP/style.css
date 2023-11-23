@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display:ital@1&display=swap');
 *{
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
 }
+
 
 /*cabeçalho*/
 nav{
@@ -93,6 +96,11 @@ footer{
 
 }
 
+/*contatos*/
+.formulario{
+
+}
+
 .container{
     background: linear-gradient(180deg, #FEF7C9 0%, #FEF7C9 50%, #653731 51%, #653731 100%);
     width: 100%;
@@ -102,24 +110,90 @@ footer{
     justify-content: center;
 
 }
-.home {
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: #653731;
     display: flex;
-}
-.home h1{
-    
-    text-align: center;
-    
-}
-
-.home img{
-    width: 200px;
-    height: 150px;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FEF7C9;
+    clip-path: circle(50% at bottom right);
+}
+.home{
+    position: relative;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home .texto{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.home .texto h4{
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.home .texto h6{
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.home .texto h4 i{
+    color: #FF8A8A;
+}
+.home .texto p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.home .texto p i{
+    color: #FF8A8A;
+}
+.home .texto a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background: #FEF7C9;
+    color: #653731;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
 
 }
+.home .texto a:hover{
+    transform: translateY(-20px);
+}
+.boximg{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+.boximg img{
+    width: 900px;
+}
+
+
 
 /*cor back produto*/
 .container1{
@@ -137,16 +211,6 @@ footer{
     justify-content: center;
     text-align: center;
     display: flex;
-
-}
-.caixa-brancaHome{  
-    background-color: #FADBCC;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 6px 6px 22px 2px black;
-    width: 205px;
-    height: 155px;
-    margin: 30px;
 
 }
 .caixa-branca{  
@@ -226,7 +290,6 @@ footer{
     align-items: center;
     flex-direction: column;
 }
-/*Validação*/
 
 .top{
     display: flex;
